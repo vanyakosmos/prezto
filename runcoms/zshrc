@@ -38,6 +38,9 @@ export PATH=$PATH:$HOME/.cargo/bin
 # pipenv
 export PIPENV_VENV_IN_PROJECT=1
 
+# poetry
+export PATH="$HOME/.poetry/bin:$PATH"
+
 # GOOGLE CLOUD
 export CLOUDSDK_PYTHON="$PYENV_ROOT/versions/test2/bin/python"
 # The next line updates PATH for the Google Cloud SDK.
