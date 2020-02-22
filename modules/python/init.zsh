@@ -15,6 +15,7 @@ if [[ -s "${PYENV_ROOT:=$HOME/.pyenv}/bin/pyenv" ]]; then
 # Load pyenv into the current python session
 elif (( $+commands[pyenv] )); then
   eval "$(pyenv init - --no-rehash zsh)"
+  eval "$(pyenv virtualenv-init - )"
 
 # Prepend PEP 370 per user site packages directory, which defaults to
 # ~/Library/Python on macOS and ~/.local elsewhere, to PATH. The
